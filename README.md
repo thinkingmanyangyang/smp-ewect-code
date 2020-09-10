@@ -19,7 +19,7 @@ SMP2020微博情绪分类技术评测（The Evaluation of Weibo Emotion Classifi
 - 多模型投票，主要采用stacking和voting两种方法。
 - 迁移学习，利用usual数据微调roberta的encoder部分，以此来初始化virus的encoder部分，这部分主要定义在net中的bert_transfer_learning中。
 - 对抗训练，根据模型的前向传播结果在embedding层添加反向梯度，以此来提高模型的稳定性，这部分定义在，net.utils.fgm中
-- 另外，本代码还支持，xlnet，electra等模型的加载，以及bert mask任务的与训练。
+- 另外，本代码还支持，xlnet，electra等模型的加载，以及bert mask任务的预训练。
 
 如何运行
 - 运行 run_k_fold.sh 显存不足需要调整batch size，本队训练过程中均通过软batch将size设置为64，随机种子也已经固定。
