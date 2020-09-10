@@ -8,4 +8,7 @@
 - 多模型投票，主要采用stacking和voting两种方法。
 
 如何运行
-
+- 运行 run_k_fold.sh 显存不足需要调整batch size，本队训练过程中均通过软batch将size设置为64，随机种子也已经固定。
+- 运行 run_k_fold_test.sh 预测模型的oof文件，train过程也会生成对应结果。
+如果想要生产提交的结果，
+- 运行 voting.py 会根据目录下各个模型的oof文件进行投票集成，并生成最终的结果。
