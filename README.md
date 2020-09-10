@@ -1,6 +1,17 @@
 # smp-ewect-code
 这是2020年smp-ewect情感分析评测的代码，在最终排行第6，获得三等奖。
+![比赛排名](image/比赛排名.png)
+
+比赛简介
+
+此次比赛报名队伍共189支，其中刷榜队伍有77支，提交最终结果的队伍仅42支
+SMP2020微博情绪分类技术评测（The Evaluation of Weibo Emotion Classification Technology，SMP2020-EWECT）共包含两类数据集，分别是通用（usual）与疫情（virus），这两类数据集都包含六类情绪，积极(happy)、愤怒(angry)、悲伤(sad)、恐惧(fear)、惊奇(surprise)和无情绪(neural)。
+两个数据集的各类情绪微博举例如下表所示：
+![数据样例](image/数据样例.png)
+
 这题虽然是情感分析，但是可以简化为一个文本分类问题,本次比赛主要是以F1值作为最终的评估指标。
+![评估指标](image/评估指标.png)
+
 本次比赛在普通的bert for sequence classification代码进行改进，主要包括一下几点：
 - 网络结构的改进，这部分的定义主要定义在net中，主要包括pooling方法改进，loss function的改进。
 - 数据清洗，对原始数据中的乱码字符进行清洗，这部分主要定义在clean_data.py中。
@@ -21,6 +32,12 @@
 - roberta，electra：在huggingface的[模型库](https://huggingface.co/models) 中搜索即可。
 - roberta wwm ext， xlnet: 在[哈工大讯飞联合实验室](https://github.com/ymcui) 的GitHub中下载。
 - uer mixed large: 在[UER-py的官网](https://github.com/dbiir/UER-py) 下载即可。
+
+写在最后
+
+- 在这里感谢张同学对于本次比赛的辛苦付出，可以folk和star他的[github](https://github.com/Tianweidadada/SMP2020---Weibo-sentiment-classification) 。
+- 同时感谢丁同学的辛苦付出，丁同学对于本次各支队伍的方案进行了总结(csdn:, zhihu:)
+- 查看其他队伍的技术报告可以访问，[smp的官网](http://39.97.118.137/)
 
 联系我们
 - 2725958627@qq.com, 杨同学
