@@ -36,7 +36,7 @@ SMP2020微博情绪分类技术评测（The Evaluation of Weibo Emotion Classifi
 写在最后
 
 - 在这里感谢张同学对于本次比赛的辛苦付出，可以fork和star他的[github](https://github.com/Tianweidadada/SMP2020---Weibo-sentiment-classification) 。
-- 同时感谢丁同学的辛苦付出，丁同学对于本次各支队伍的方案进行了总结(csdn:, zhihu:)
+- 同时感谢丁同学的辛苦付出，丁同学对于本次各支队伍的方案进行了总结(csdn:, [zhihu](https://zhuanlan.zhihu.com/p/222138885))
 - 查看其他队伍的技术报告可以访问，[smp的官网](http://39.97.118.137/)
 
 联系我们
